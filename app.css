@@ -1,0 +1,199 @@
+* {
+    margin: 0px 0.7rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+span {
+    color: crimson;
+}
+.container {
+    height: 100vh;
+}
+.header {
+    height: 10%;
+    /* border: 2px solid red; */
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header__logo {
+    font-weight: bold;
+    /* font-size: 2.5rem; */
+    font-size: 4vw;
+}
+.header .header__menu {
+    display: flex;
+    /* font-size: 1.5rem; */
+    font-size: 2.5vw;
+    gap: 15px;
+}
+.hamburger  {
+    display: none;
+}
+.main {
+    height: 80%;
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+.main__image {
+      background-image: url('https://lh3.googleusercontent.com/TbhJ2bOe16a50-6wZgdNtKC3JzXwwSOyt7698kUztWOWzTKC7LwC4GbZJNtPE-3yCFYPwIdDxLyhZBnyCcn37v7SRi5q8r7iRrd-Y97R4IvjEwl9Vd3pf5c2GAwwwsZzU8MY85dJVdhsoTMhMclanfCWgLAS463B6cEe1BXQ1QJ8fQUzei99bn2bay0MKsH1o39IRSFEBezUcxayXfiq3Gdv8whQ4YwyJQ3Sz0k0jgl8KrdF5C1leg5Qm9m1N0a7uMedNI66lZnSNJJpq4kT2fCoyA1ZEzsOHTw7QxzrSXDqmZXrmfYtHb3sKDCd2Ym9jexnyQlfoBX1pmEVzVMX6nMxCKly2HQVBvkuYXzk1F7LGH7hyMxZyye1JaJCSnZS8lUIJE5J7vby6Dk2LoUKKv4Dk7ipznzk8Ad1Xzmtb6106CLW67jUVVFWal38-26kR51L3on85NHZ9lU_hMiGPv8BOR7PjBPb1eihztkbyBJcwyV3swd3nhv5ePZyAGqZEDYqGu3VfeXAy-srtejjk6Nqyt_FZc8WtyYXeLoofGWshOJ-Hibk-U-GCn675SzqJo0u7-mJOILLYM9Pm1VQUdVYa-u_wa14OY-1zLusTujXblqEGsfUxoCzVocXvlMPmjGMG-PKeBOT4SDX9EwoAOChSI8KjWPAYYH00f-YumXnt9yaHXTUi1DHV8xl1C4Dri8HuiVMnRGNimlD_w0KSKO3BQ9scidb-Q_U0kq5S8UORvq5hdOMo83u5ZdDcOcKKWW8MiX1vh0zdzkIgUllnLnkPZN5v-s1WyN_mntRuzgcZSadQdrhEVGED4MuK76OmvwIr8d5MDpUFBjDmV7aN313O9lSaoTd5Gh7vXzidh7U-KVMlurDRIwSsL_6i3lDPL-DoNBvWrXEz7NhSUpam8_slnCVXhy-fJhE2uYRineGZGOVikfM128_DqPzryWc93ZbGhaYnKo=s663-no?authuser=0');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 50%;
+    border-radius: 0.5rem;
+
+}
+.main__text {
+width: 50%;
+
+text-align: center;
+/* border: 2px solid red; */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main__text-1 {
+    font-size: 8vw;
+}
+.main__text-2 {
+    font-size: 5vw;
+}
+.main__text-2 span {
+    color: crimson;
+}
+.main__text-3 {
+    font-size: 5vw;
+}
+.main__text-4 {
+    font-size: 5vw;
+}
+.footer {
+    height: 10%;
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+    font-size: 4vw;
+}
+
+
+@media screen and (max-width: 650px) {
+* {
+    margin: 0;
+}
+body {
+    position: relative;
+}
+    .header {
+        justify-content: space-between;
+        /* position: relative; */
+        background-color: grey;
+        padding: 0 0.8rem;
+    }
+    .header .header__logo {
+       font-size: 2rem;
+    }
+    .header .header__menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 10%;
+        left: 0;
+        margin-right: 0;
+        height: 50vh;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        font-size: 1.3rem;
+        background-color: grey;
+        text-align: center;
+        gap: 2rem;
+        font-weight: bold;
+    }
+    .header .header__menu .items {
+        margin-top: 0.9rem;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    .header .header__menu .items:hover {
+        color: crimson;
+        text-decoration: underline;
+    }
+    .main {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .main__text {
+        width: 100%;
+    }
+    .main .main__image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100% ;
+        background-size: cover;
+        background-position: center;
+    }
+    .footer {
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 0.8rem;
+    }
+    .hamburger {
+        /* position: absolute; */
+        display: block;
+    }
+    .hamburger i {
+        font-size: 1.6rem;
+        color: black;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    .hamburger i:hover {
+        color: crimson;
+      transform: rotate(90deg);
+    }
+
+    .block {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
